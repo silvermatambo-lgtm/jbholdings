@@ -1,4 +1,4 @@
-const CACHE_NAME = 'granite-installs-v1';
+const CACHE_NAME = 'jb-holdings-v2';
 const OFFLINE_URL = '/offline.html';
 
 const STATIC_ASSETS = [
