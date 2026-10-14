@@ -13,12 +13,12 @@ function SectionReveal({ children, className = '', delay = '' }: { children: Rea
 }
 
 const SERVICES_PREVIEW = [
-  { icon: <HomeIcon size={28} />, title: 'Building & Construction', desc: 'Full building contractor services from foundation to finish.' },
-  { icon: <Paintbrush size={28} />, title: 'Painting', desc: 'Interior & exterior painting with quality finishes.' },
-  { icon: <Zap size={28} />, title: 'Electrical', desc: 'Installations, repairs and maintenance by qualified electricians.' },
-  { icon: <Droplets size={28} />, title: 'Plumbing', desc: 'Reliable plumbing solutions for homes and businesses.' },
-  { icon: <Fence size={28} />, title: 'Security Services', desc: '24/7 commercial and residential guarding.' },
-  { icon: <Trees size={28} />, title: 'Gardening & Landscaping', desc: 'Beautiful outdoor spaces maintained with care.' },
+  { icon: <HomeIcon size={28} />, image: '/images/service-building.jpg', title: 'Building & Construction', desc: 'Full building contractor services from foundation to finish.' },
+  { icon: <Paintbrush size={28} />, image: '/images/service-painting.jpg', title: 'Painting', desc: 'Interior & exterior painting with quality finishes.' },
+  { icon: <Zap size={28} />, image: '/images/service-electrical.jpg', title: 'Electrical', desc: 'Installations, repairs and maintenance by qualified electricians.' },
+  { icon: <Droplets size={28} />, image: '/images/service-plumbing.jpg', title: 'Plumbing', desc: 'Reliable plumbing solutions for homes and businesses.' },
+  { icon: <Fence size={28} />, image: '/images/service-security.jpg', title: 'Security Services', desc: '24/7 commercial and residential guarding.' },
+  { icon: <Trees size={28} />, image: '/images/service-landscaping.jpg', title: 'Gardening & Landscaping', desc: 'Beautiful outdoor spaces maintained with care.' },
 ];
 
 export default function Home() {
@@ -62,12 +62,15 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES_PREVIEW.map((s, i) => (
               <SectionReveal key={s.title} delay={`delay-${(i % 3) + 1}00`}>
-                <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-stone-100 h-full group">
-                  <div className="w-14 h-14 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center mb-4 group-hover:bg-brand-500 group-hover:text-white transition-colors">
-                    {s.icon}
-                  </div>
+                <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-stone-100 h-full group overflow-hidden">
+                  <img src={s.image} alt={s.title} loading="lazy" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center mb-4 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                      {s.icon}
+                    </div>
                   <h3 className="text-lg font-bold text-stone-800 mb-2">{s.title}</h3>
                   <p className="text-stone-500 text-sm leading-relaxed">{s.desc}</p>
+                  </div>
                 </div>
               </SectionReveal>
             ))}
