@@ -46,10 +46,15 @@ export default function PWAInstall() {
         </button>
 
         <div className="flex items-center gap-3 mb-3">
-          <img src="https://i.imgur.com/HBY0SWU.png" alt="App icon" className="w-12 h-12 object-contain rounded-xl border border-stone-100 p-1" />
+          <div className="w-12 h-12 rounded-xl border border-stone-100 p-1 flex items-center justify-center">
+            <svg width="42" height="38" viewBox="0 0 120 100" role="img" aria-label="JB Holdings logo">
+              <path d="M20 45 L60 10 L100 45" fill="none" stroke="#E85D04" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+              <text x="60" y="72" textAnchor="middle" fill="#E85D04" fontSize="42" fontWeight="700" fontFamily="Inter, sans-serif">jb</text>
+            </svg>
+          </div>
           <div>
             <p className="font-bold text-stone-800 text-sm leading-tight">JB Holdings</p>
-            <p className="text-brand-500 text-xs">Premium Stone Solutions</p>
+            <p className="text-brand-500 text-xs">Building & Maintenance</p>
           </div>
         </div>
 
