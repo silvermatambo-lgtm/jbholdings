@@ -4,41 +4,27 @@ import { Link } from 'react-router-dom';
 
 const SLIDES = [
   {
-    image: '/images/hero-ceiling.jpg',
-    tag: 'Ceilings & Maintenance',
-    heading: 'Lay Every Brick With',
-    highlight: 'Passion & Purpose',
-    sub: 'Excellence in every detail of your craft. Professional ceiling installation and home maintenance by skilled South African craftsmen.',
+    image: '/images/hero-building.jpg',
+    tag: 'Building & Construction',
+    heading: 'Building & Construction',
+    highlight: 'Built With Care',
+    sub: 'Professional building, renovation and construction services for homes and businesses.',
   },
   {
     image: '/images/hero-electrical.jpg',
     tag: 'Electrical Services',
-    heading: 'Power Up Your',
-    highlight: 'Inner Strength',
-    sub: 'Expert electrical installations, repairs and maintenance. Safe, reliable power solutions for homes and businesses.',
+    heading: 'Electrical Installation',
+    highlight: 'Safe & Reliable',
+    sub: 'Electrical installations, repairs and maintenance for residential and commercial properties.',
   },
   {
-    image: '/images/hero-security.jpg',
-    tag: 'Security Services',
-    heading: 'Premium Protection',
-    highlight: '24/7 Guarding',
-    sub: 'Commercial and residential security guarding. Safeguard your property with professional trained personnel.',
+    image: '/images/service-plumbing.jpg',
+    tag: 'Plumbing Services',
+    heading: 'Plumbing & Repairs',
+    highlight: 'Quality Workmanship',
+    sub: 'Reliable plumbing solutions, leak repairs, installations and maintenance.',
   },
-  {
-    image: '/images/hero-painting.jpg',
-    tag: 'Painting & Finishing',
-    heading: 'Every Masterpiece Begins With',
-    highlight: 'A Single Bold Stroke',
-    sub: 'Professional interior and exterior painting with quality finishes that last.',
-  },
-  {
-    image: '/images/hero-building.jpg',
-    tag: 'Building & Construction',
-    heading: 'Building & Painting',
-    highlight: 'Done Right',
-    sub: 'From foundation to finish – your trusted local hands for quality construction across South Africa.',
-  },
-];
+]
 
 const TYPING_INTERVAL = 70;
 const SLIDE_DURATION = 6500;
